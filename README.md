@@ -16,14 +16,14 @@ To go further, we will try to look for features that are correlated with the des
 - lsoa-data.csv (provided by TAs): contains the aggregated information on food purchases, enriched with information coming from the census for the full year 2015 at LSOA level. From this data we will use the volume of alcohol consumed by areas and other information in our last analysis such as sex, age...
 # 5. Methods
 1. Data collection: Download the data and keep only the columns we need for our study. We will then merge them.
-2. Data Processing:  First compute representativeness of each area to filter the data used. Make spearman correlation between alcohol consumption and chosen indicators. Then compute propensity scores and plot them, similar to how it was done in the original paper, in order to improve our results and decrease possible biases. 
+2. Data Processing:  First compute representativeness of each area to filter the data used. Make spearman correlation between alcohol consumption and chosen indicators. Then compute propensity scores and plot them, similar to how it was done in the original paper, in order to improve our results and decrease possible biases.
 3. Data analysis: Comment on the results. Plot a map of the areas with the likelihood of suffering from alcoholism. Find a way to show the area’s wealth on the same plot. This will allow us to visualize geographically and adds a third information which is area proximity.
 # 6. Proposed timeline
 (For Part A, Part B to be done individually in parallel)
 
-November 30th - December 6th : Extension Analysis Notebook
-December 7th - 13th : Data story and Report
-December 14th - 18th : Form submission, video recording and submitting (by the end of the week to avoid working around Christmas)
+- November 30th - December 6th : Extension Analysis Notebook
+- December 7th - 13th : Data story and Report
+- December 14th - 18th : Form submission, video recording and submitting (by the end of the week to avoid working around Christmas)
 # 7. Organization within the team
 - Ken : Extension Analysis Notebook (propensity and plotting). Data Story.
 - Nathan K. : Extension Analysis Notebook (matching). Report.
