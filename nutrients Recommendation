@@ -86,4 +86,6 @@ fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',ti
 fig.show()
 
 As we can observe in this plot, macronutrient intakes like sugar seems correlated to social indicators as a High level of Qualification. Let's verify it. 
+To do so we used the same indicators as the ones described above for alcohol consumption and tried to correlate them to intakes of Macronutrients.
+With the score previously computed, which represents the trend of an area a good diet, we now are going to try to corrolate it with social indicators by doing spearmann correlations.
 
