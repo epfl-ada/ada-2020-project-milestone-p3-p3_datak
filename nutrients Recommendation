@@ -79,7 +79,7 @@ So now we can easily underline that porr people (orange) consume less alcohol th
   
 SUITE CORRELATION AVEC FACTEURS SOCIAUX  
 
-Great! We have succesfully found which areas are closer to Macronutrients recommendation for a good health. Now, let's correlate these results with some social indicators. 
+Great! We have succesfully found which areas are closer to Macronutrient recommendations for a good health. Now, let's correlate these results with some social indicators. 
 
 #Exemple of observable correlation
 fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',title='Exemple of observable correlation ')
