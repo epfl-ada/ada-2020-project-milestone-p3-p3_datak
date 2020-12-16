@@ -42,3 +42,19 @@ results
 #Exemple of observable correlation
 fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',title='Exemple of observable correlation ')
 fig.show()
+
+
+The idea was to study if an alcohol consumption could be influenced by some social caracteristics of an area.
+To do so, we decided to use several indicators given by the Office for National Statistics of UK:
+    Unemployment Rate: % of unemployed people in a given area
+    Mean Annual Household Income estimate: Given in £ for each area
+    Median Annual Household Income estimate:  Given in £ for each area 
+    No Qualification:  % of people without qualification in a given area
+    High Qualification:  % of people with level of qualification of 4 or above in a given area
+    
+  In order to show and quantify possibles influences, we computed spearman correlations between the quantity (in g) of alcohol in a typical product of an area and indicators decribed above.
+  PLOT
+  The results are indeed a bit surprising. Contrary to popular belief where we could expect positive correlations between a high consumption of alcohol for poor or less educated people,
+  our datas are showing the opposite: rich and educated people seem to consume more alcohol.
+  
+  
