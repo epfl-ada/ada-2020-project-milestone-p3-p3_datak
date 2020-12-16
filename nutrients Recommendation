@@ -39,10 +39,6 @@ results
 
 
 
-#Exemple of observable correlation
-fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',title='Exemple of observable correlation ')
-fig.show()
-
 
 The idea was to study if an alcohol consumption could be influenced by some social caracteristics of an area.
 To do so, we decided to use several indicators given by the Office for National Statistics of UK:
@@ -72,3 +68,22 @@ plot2=sns.distplot(poor.alcohol, label = 'poor people')
 
 So now we can easily underline that porr people (orange) consume less alcohol than rich (blue) people
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+SUITE CORRELATION AVEC FACTEURS SOCIAUX  
+
+Great! We have succesfully found which areas are closer to Macronutrients recommendation for a good health. Now, let's correlate these results with some social indicators. 
+
+#Exemple of observable correlation
+fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',title='Exemple of observable correlation ')
+fig.show()
+
+As we can observe in this plot, macronutrient intakes like sugar seems correlated to social indicators as a High level of Qualification. Let's verify it. 
+
