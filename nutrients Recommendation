@@ -14,3 +14,31 @@ https://apps.who.int/iris/bitstream/handle/10665/43411/WHO_TRS_935_eng.pdf?seque
 (2): WHO, “Healthy diet” https://www.who.int/news-room/fact-sheets/detail/healthy-diet
 (3): Dietary Guidelines for American 2015-2020 ,8th edition
 (4): https://en.wikipedia.org/wiki/Human_body_weight#cite_note-wales-20
+
+
+
+
+
+
+#verifying that representativeness and indicators are not correlated: for exemple rich people (high income)
+#could buy more at Tesco than other people
+
+R_representativeness=[]
+P_representativeness=[]
+for i in id_indicators:
+    r= stats.spearmanr(df_representativ['representativeness_norm'],df_representativ[i],nan_policy='omit')[0]
+    p= stats.spearmanr(df_representativ['representativeness_norm'],df_representativ[i],nan_policy='omit')[1]
+    R_representativeness.append(r)
+    P_representativeness.append(p)
+    
+    #Create a data frame with the results
+results = pd.DataFrame({ 'Indicators':id_indicators,'R': R_representativeness,'p-value':P_representativeness})
+results
+
+
+
+
+
+#Exemple of observable correlation
+fig = px.scatter(df_representativ, x='High Qualification(%)',y='energy_sugar',title='Exemple of observable correlation ')
+fig.show()
