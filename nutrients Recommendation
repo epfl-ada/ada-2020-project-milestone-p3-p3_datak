@@ -58,4 +58,17 @@ To do so, we decided to use several indicators given by the Office for National 
   our datas are showing the opposite: rich and educated people seem to consume more alcohol. On way of interpreting such results could be to consider that alcohol products are generally expensive 
   so rich people can afford to consume alcohol drinks while more precarious people only buy primary products.
   
+  Now let's visually verify our results
+
+df_representativ['Mean Annual Household Income estimate (£)'].describe()
+#75% of richer people
+rich = df_representativ.loc[(df_representativ['Mean Annual Household Income estimate (£)'] > 53719)]
+#25% of poorest people
+poor = df_representativ.loc[(df_representativ['Mean Annual Household Income estimate (£)'] < 34255)]
+plt.figure(figsize=(12,6))
+plot1=sns.distplot(rich.alcohol)
+plot1.set_label('rich people')
+plot2=sns.distplot(poor.alcohol, label = 'poor people')
+
+So now we can easily underline that porr people (orange) consume less alcohol than rich (blue) people
   
